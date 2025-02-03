@@ -9,7 +9,11 @@
     "start": "sanity start",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "deploy-graphql": "sanity graphql deploy",
+    "validate": "npx sanity@latest documents validate -y",
+    "lint": "eslint . -c .ts,.tsx",
+    "type-extract": "npx sanity@latest schema extract",
+    "type-gen": "npx sanity@latest typegen generate"
   },
   "keywords": [
     "sanity"
@@ -20,6 +24,7 @@
     "react-dom": "^18.2.0",
     "sanity": "^3.71.2",
     "sanity-plugin-documents-pane": "^2.3.0",
+    "sanity-plugin-media": "^2.3.2",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

@@ -37,3 +37,14 @@ export const defaultDocumentNode: DefaultDocumentNodeResolver = (S, {schemaType}
 //       _id,
 //       'customId': _id + _id
 //    }
+
+
+
+// *[_type == 'event' &&
+//   slug.current != null]
+//   |order(date desc){
+//   name,
+//     ticket,
+//     date,
+//     "isPast": date < now()
+//   }
